@@ -22,8 +22,8 @@ $i = 0;
 //header('Content-Type:image/jpeg');
 while($queryCercaFotoRow = mysql_fetch_assoc($queryCercaFoto)){
 	$i++;
-	$immagine = $queryCercaFotoRow['foto'];
-	$newfile = fopen('images/'.$queryCercaFotoRow['foto_n'],'w') or die("impossibile aprire il file");
+	$immagine = $queryCercaFotoRow['fotoBin'];
+	$newfile = fopen('images/'.$queryCercaFotoRow['nomeFoto'],'w') or die("impossibile aprire il file");
 	fwrite($newfile,$immagine);
 }
 echo $i;

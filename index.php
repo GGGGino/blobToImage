@@ -1,6 +1,5 @@
 <?php
-header('Content-type: text/htm
-	?>l;charset=utf-8');
+header('Content-type: text/html;charset=utf-8');
 $database               = "xxx";
 $server                 = "xxx";
 $user_nameDB            = "xxx";
